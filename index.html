@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nike Shop</title>
+	<link rel="stylesheet" href="styles/shop.css">
+</head>
+<body>
+	<img class="logo" src="images/logo.png">
+
+	<div class="nav-bar">
+		<span><b>Shop</b></span>
+		<a href="pages/about.html"><b>About</b></a>
+	</div>
+
+	<h1>SHOP</h1>
+
+	<div class="container">
+		<div class="items">
+			<h2>Items</h2>
+			<div class="single-item">
+				<div class="si-img">
+					<img src="images/t-shirt.png">
+				</div>
+				<div class="si-content">
+					<h3>T-Shirt</h3>
+					<p class="price">€20</p>
+				</div>
+				<div class="actions">
+					<input type="number" name="quantity" value="0" min="0">
+					<button onclick="addToCart(this)">Add</button>
+				</div>
+			</div>
+
+			<div class="single-item">
+				<div class="si-img">
+					<img src="images/pants.png">
+				</div>
+				<div class="si-content">
+					<h3>Pants</h3>
+					<p class="price">€50</p>
+				</div>
+				<div class="actions">
+					<input type="number" name="quantity" value="0" min="0">
+					<button onclick="addToCart(this)">Add</button>
+				</div>
+			</div>
+
+			<div class="single-item">
+				<div class="si-img">
+					<img src="images/shoes.png">
+				</div>
+				<div class="si-content">
+					<h3>Shoes</h3>
+					<p class="price">€70</p>
+				</div>
+				<div class="actions">
+					<input type="number" name="quantity" value="0" min="0">
+					<button onclick="addToCart(this)">Add</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="cart">
+			<table class="cart-table">
+				<caption><b>Your cart</b></caption>
+				<tr>
+					<th>Name</th>
+					<th>Amount</th>
+					<th>Price</th>
+					<th>Total price</th>
+					<th></th>
+				</tr>
+			</table>
+			<div class="total"></div>
+		</div>
+	</div>
+
+	<script src="scripts/script.js"></script>
+</body>
+</html>
